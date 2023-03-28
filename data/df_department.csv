@@ -1,64 +1,64 @@
-,DepartmentID,Name
-0,32,ACCOUNTING GUNAWANGSA HOTEL MANYAR SURABAYA
-1,2,ACCOUNTING GUNAWANGSA HOTEL MERR
-2,51,ACCOUNTING WARNA WARNI MEDIA JAKARTA
-3,23,ACCOUNTING WARNA WARNI MEDIA SURABAYA
-4,28,ADMINISTRASI DAN GENERAL PT. JASA BERSIH INDONESIA
-5,3,ADMINISTRATION AND GENERAL GUNAWANGSA HOTEL MERR
-6,58,BACK OFFICE PT. Indokulinari Berkah Abadi
-7,54,BUSINESS DEVELOPMENT WARNA WARNI MEDIA JAKARTA
-8,36,BUSINESS DEVELOPMENT WARNA WARNI MEDIA SURABAYA
-9,62,ENGINEERING
-10,7,ENGINEERING GUNAWANGSA HOTEL MERR
-11,49,FINANCE & ACCOUNTING WARNA WARNI MEDIA JAKARTA
-12,20,FINANCE & ACCOUNTING WARNA WARNI MEDIA SURABAYA
-13,35,FOOD AND BEVERAGE PRODUCT GUNAWANGSA HOTEL MANYAR SURABAYA
-14,30,FOOD AND BEVERAGES SERVICE GUNAWANGSA HOTEL MERR
-15,33,FOOD BEVERAGE SERVICE GUNAWANGSA HOTEL MANYAR SURABAYA
-16,59,FRONT OFFICE GUNAWANGSA HOTEL MANYAR SURABAYA
-17,1,FRONT OFFICE GUNAWANGSA HOTEL MERR
-18,57,FRONT OFFICE PT. Indokulinari Berkah Abadi
-19,25,GENERAL AFFAIR GUNAWANGSA GROUP
-20,47,GENERAL AFFAIR WARNA WARNI MEDIA JAKARTA
-21,18,GENERAL AFFAIR WARNA WARNI MEDIA SURABAYA
-22,45,GENERAL OPERATION WARNA WARNI MEDIA JAKARTA
-23,16,GENERAL OPERATION WARNA WARNI MEDIA SURABAYA
-24,64,GRAPHIC DESIGN
-25,6,HOUSEKEEPING  GUNAWANGSA HOTEL MERR
-26,44,HRD WARNA WARNI MEDIA JAKARTA
-27,15,HRD WARNA WARNI MEDIA SURABAYA
-28,5,HUMAN RESOURCES GUNAWANGSA HOTEL MERR
-29,61,IT
-30,34,IT ANANG KARAOKE
-31,40,IT PROGRAMMER WARNA WARNI MEDIA JAKARTA
-32,9,IT PROGRAMMER WARNA WARNI MEDIA SURABAYA
-33,52,IT WARNA WARNI MEDIA JAKARTA
-34,24,IT WARNA WARNI MEDIA SURABAYA
-35,48,LEGAL WARNA WARNI MEDIA JAKARTA
-36,19,LEGAL WARNA WARNI MEDIA SURABAYA
-37,63,LOKASI
-38,41,MARKETING EXECUTIVE WARNA WARNI MEDIA JAKARTA
-39,10,MARKETING EXECUTIVE WARNA WARNI MEDIA SURABAYA
-40,22,MARKETING NOMADEN PT. JASA BERSIH INDONESIA
-41,38,MARKETING PT CENTRAL INVESTINDO
-42,37,MARKETING PT MEDIA INOVASI INDONESIA
-43,46,MARKETING WARNA WARNI MEDIA JAKARTA
-44,17,MARKETING WARNA WARNI MEDIA SURABAYA
-45,13,OPERASIONAL GUNAWANGSA GROUP
-46,55,OPERASIONAL WARNA WARNI MEDIA SURABAYA
-47,27,OPERATIONAL L.E.A.P Preschool
-48,26,OPERATIONAL PT. AURIKA DAMAI MAKMUR
-49,53,PERENCANA PROYEK WARNA WARNI MEDIA JAKARTA
-50,29,PERENCANA PROYEK WARNA WARNI MEDIA SURABAYA
-51,56,PRODUKSI WARNA WARNI MEDIA SURABAYA
-52,42,PROJECT OFFICER WARNA WARNI MEDIA JAKARTA
-53,11,PROJECT OFFICER WARNA WARNI MEDIA SURABAYA
-54,50,R&D WARNA WARNI MEDIA JAKARTA
-55,21,R&D WARNA WARNI MEDIA SURABAYA
-56,31,SALES & MARKETING GUNAWANGSA HOTEL MANYAR SURABAYA
-57,4,SALES AND MARKETING GUNAWANGSA HOTEL MERR
-58,39,SEKRETARIS WARNA WARNI MEDIA JAKARTA
-59,8,SEKRETARIS WARNA WARNI MEDIA SURABAYA
-60,60,TESTDEPARTMENT1 testcompany
-61,43,WEB PROGRAMMER  WARNA WARNI MEDIA JAKARTA
-62,12,WEB PROGRAMMER  WARNA WARNI MEDIA SURABAYA
+DepartmentID,DepartmentName
+32,accounting gunawangsa hotel manyar surabaya
+2,accounting gunawangsa hotel merr
+51,accounting warna warni media jakarta
+23,accounting warna warni media surabaya
+28,administrasi dan general pt jasa bersih indonesia
+3,administration and general gunawangsa hotel merr
+58,back office pt indokulinari berkah abadi
+54,business development warna warni media jakarta
+36,business development warna warni media surabaya
+62,engineering
+7,engineering gunawangsa hotel merr
+49,finance accounting warna warni media jakarta
+20,finance accounting warna warni media surabaya
+35,food and beverage product gunawangsa hotel manyar surabaya
+30,food and beverages service gunawangsa hotel merr
+33,food beverage service gunawangsa hotel manyar surabaya
+59,front office gunawangsa hotel manyar surabaya
+1,front office gunawangsa hotel merr
+57,front office pt indokulinari berkah abadi
+25,general affair gunawangsa group
+47,general affair warna warni media jakarta
+18,general affair warna warni media surabaya
+45,general operation warna warni media jakarta
+16,general operation warna warni media surabaya
+64,graphic design
+6,housekeeping gunawangsa hotel merr
+44,hrd warna warni media jakarta
+15,hrd warna warni media surabaya
+5,human resources gunawangsa hotel merr
+61,it
+34,it anang karaoke
+40,it programmer warna warni media jakarta
+9,it programmer warna warni media surabaya
+52,it warna warni media jakarta
+24,it warna warni media surabaya
+48,legal warna warni media jakarta
+19,legal warna warni media surabaya
+63,lokasi
+41,marketing executive warna warni media jakarta
+10,marketing executive warna warni media surabaya
+22,marketing nomaden pt jasa bersih indonesia
+38,marketing pt central investindo
+37,marketing pt media inovasi indonesia
+46,marketing warna warni media jakarta
+17,marketing warna warni media surabaya
+13,operasional gunawangsa group
+55,operasional warna warni media surabaya
+27,operational preschool
+26,operational pt aurika damai makmur
+53,perencana proyek warna warni media jakarta
+29,perencana proyek warna warni media surabaya
+56,produksi warna warni media surabaya
+42,project officer warna warni media jakarta
+11,project officer warna warni media surabaya
+50,warna warni media jakarta
+21,warna warni media surabaya
+31,sales marketing gunawangsa hotel manyar surabaya
+4,sales and marketing gunawangsa hotel merr
+39,sekretaris warna warni media jakarta
+8,sekretaris warna warni media surabaya
+60,testdepartment testcompany
+43,web programmer warna warni media jakarta
+12,web programmer warna warni media surabaya

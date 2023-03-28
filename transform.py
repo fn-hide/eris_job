@@ -32,6 +32,10 @@ def get_age(date):
 def substract_months(datestart, dateend):
     return round((dateend - datestart) / np.timedelta64(1, 'M'))
 
+def remove_html(text: str):
+    # <[^<]+?>
+    return BeautifulSoup(text).get_text()
+
 def maintain_alpha(text: str):
     return re.sub('[^a-zA-Z]', ' ', text)
 
@@ -41,9 +45,16 @@ def remove_single(text: str):
 def remove_morespace(text: str):
     return re.sub('\s+', ' ', text)
 
-def remove_html(text: str):
-    # <[^<]+?>
-    return BeautifulSoup(text).get_text()
+def clean_text(text: str):
+    return remove_morespace(
+        remove_single(
+            maintain_alpha(
+                remove_html(
+                    text.lower()
+                )
+            )
+        )
+    ).strip()
 
 def repair_salary(salary):
     if 0 < salary <= 100:
@@ -54,5 +65,30 @@ def repair_salary(salary):
         return 0
     else:
         return int(salary)
+    
+def txt_tolist(filepath):
+    f = open(filepath, "r")
+    stopword_list = []
+    for line in f:
+        stripped_line = line.strip()
+        line_list = stripped_line.split()
+        stopword_list.append(line_list[0])
+    f.close()
+    
+    print('There are', len(stopword_list), 'data.')
+
+    return stopword_list
+
+def totext_age(usiamin=15, usiamax=65):
+    age = []
+    for usia in range(usiamin, usiamax + 1):
+        age.append('U' + str(usia))
+    return ' '.join(age)
+
+def totext_iq(iqmin=80, iqmax=200):
+    iq = []
+    for q in range(iqmin, iqmax + 1):
+        iq.append('IQ' + str(q))
+    return ' '.join(iq)
     
 

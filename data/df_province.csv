@@ -1,35 +1,35 @@
-,ProvinceID,Name
-0,5,BALI
-1,9,BANTEN
-2,10,BENGKULU
-3,11,DI YOGYAKARTA
-4,2,DKI JAKARTA
-5,12,GORONTALO
-6,13,JAMBI
-7,3,JAWA BARAT
-8,7,JAWA TENGAH
-9,1,JAWA TIMUR
-10,14,KALIMANTAN BARAT
-11,15,KALIMANTAN SELATAN
-12,16,KALIMANTAN TENGAH
-13,17,KALIMANTAN TIMUR
-14,18,KALIMANTAN UTARA
-15,8,KEPULAUAN BANGKA BELITUNG
-16,19,KEPULAUAN RIAU
-17,20,LAMPUNG
-18,21,MALUKU
-19,22,MALUKU UTARA
-20,23,NANGGROE ACEH DARUSSALAM (NAD)
-21,24,NUSA TENGGARA BARAT (NTB)
-22,25,NUSA TENGGARA TIMUR (NTT)
-23,26,PAPUA
-24,27,PAPUA BARAT
-25,28,RIAU
-26,29,SULAWESI BARAT
-27,6,SULAWESI SELATAN
-28,30,SULAWESI TENGAH
-29,31,SULAWESI TENGGARA
-30,33,SULAWESI UTARA
-31,32,SUMATERA BARAT
-32,34,SUMATERA SELATAN
-33,4,SUMATERA UTARA
+ProvinceID,ProvinceName
+5,bali
+9,banten
+10,bengkulu
+11,di yogyakarta
+2,dki jakarta
+12,gorontalo
+13,jambi
+3,jawa barat
+7,jawa tengah
+1,jawa timur
+14,kalimantan barat
+15,kalimantan selatan
+16,kalimantan tengah
+17,kalimantan timur
+18,kalimantan utara
+8,kepulauan bangka belitung
+19,kepulauan riau
+20,lampung
+21,maluku
+22,maluku utara
+23,nanggroe aceh darussalam (nad)
+24,nusa tenggara barat (ntb)
+25,nusa tenggara timur (ntt)
+26,papua
+27,papua barat
+28,riau
+29,sulawesi barat
+6,sulawesi selatan
+30,sulawesi tengah
+31,sulawesi tenggara
+33,sulawesi utara
+32,sumatera barat
+34,sumatera selatan
+4,sumatera utara

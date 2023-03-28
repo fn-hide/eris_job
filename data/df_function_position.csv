@@ -1,65 +1,65 @@
-,FunctionPositionID,FunctionPositionName
-0,22,ACCOUNTING
-1,36,ADMINISTRASI
-2,35,ANALYST R&D
-3,48,ASST. FOOD & BEVERAGE
-4,42,ASST. FOOD AND BEVERAGES MANAGER
-5,33,BARISTA
-6,2,BOOK KEEPER
-7,23,BUILDING MANAGER
-8,53,BUSINESS DEVELOPMENT
-9,16,CASHIER (F&A)
-10,47,CHIEF ACCOUNTING
-11,43,CHIEF ACCOUNTING 2
-12,52,COOK
-13,28,COOK 2
-14,55,COST CONTROL
-15,59,CREW
-16,34,DESIGN GRAPHIC
-17,10,DRIVER
-18,20,ENGINEERING STAFF
-19,38,EXECUTIVE HOUSEKEEPING
-20,39,FINANCE & ACCOUNTING
-21,56,FITOUT - ARSITEK
-22,44,FOOD AND BEVERAGES MANAGER
-23,41,FOOD AND BEVERAGES SERVICES
-24,58,FRONT DESK AGENT
-25,26,GENERAL AFFAIR
-26,49,GENERAL CASHIER & ACCOUNT PAYABLE
-27,61,GENERAL OPERATION
-28,60,general operation 2
-29,62,GRAPHIC DESIGN 
-30,32,HELPER
-31,14,HRD
-32,25,IT
-33,3,IT ANDROID PROGRAMMER
-34,50,IT STAFF
-35,24,LEGAL
-36,65,LOKASI 
-37,17,MAINTENANCE ELECTICIAN
-38,46,MANAGER OPERATIONAL
-39,40,MARKETING COMMUNICATION
-40,6,MARKETING EXECUTIVE
-41,21,MARKETING NOMADEN
-42,64,MARKETING SOFTWARE
-43,15,MARKETING SUPPORT
-44,1,NIGHT AUDIT
-45,37,PERENCANA PROYEK
-46,13,PROJECT OFFICER
-47,18,PURCHASING
-48,9,RECEPTIONIST
-49,11,ROOM ATTENDANT
-50,19,SALES BANQUET
-51,45,SALES EXECUTIVE
-52,51,SALES MARKETING MANAGER
-53,54,SEKRETARIS
-54,5,SEKRETARIS DIREKSI
-55,4,SEKRETARIS LEGAL
-56,7,SENIOR ESTIMATOR
-57,12,SENIOR HRD
-58,29,SPV. RESTO
-59,31,STEWARD
-60,27,TEACHER
-61,57,TENANT RELATION
-62,30,WAITER/WAITRESS
-63,8,WEB PROGRAMMER
+FunctionPositionID,FunctionPositionName
+22,accounting
+36,administrasi
+35,analyst
+48,asst food beverage
+42,asst food and beverages manager
+33,barista
+2,book keeper
+23,building manager
+53,business development
+16,cashier
+47,chief accounting
+43,chief accounting
+52,cook
+28,cook
+55,cost control
+59,crew
+34,design graphic
+10,driver
+20,engineering staff
+38,executive housekeeping
+39,finance accounting
+56,fitout arsitek
+44,food and beverages manager
+41,food and beverages services
+58,front desk agent
+26,general affair
+49,general cashier account payable
+61,general operation
+60,general operation
+62,graphic design
+32,helper
+14,hrd
+25,it
+3,it android programmer
+50,it staff
+24,legal
+65,lokasi
+17,maintenance electician
+46,manager operational
+40,marketing communication
+6,marketing executive
+21,marketing nomaden
+64,marketing software
+15,marketing support
+1,night audit
+37,perencana proyek
+13,project officer
+18,purchasing
+9,receptionist
+11,room attendant
+19,sales banquet
+45,sales executive
+51,sales marketing manager
+54,sekretaris
+5,sekretaris direksi
+4,sekretaris legal
+7,senior estimator
+12,senior hrd
+29,spv resto
+31,steward
+27,teacher
+57,tenant relation
+30,waiter waitress
+8,web programmer
