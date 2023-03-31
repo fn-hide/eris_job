@@ -34,13 +34,16 @@ def substract_months(datestart, dateend):
 
 def remove_html(text: str):
     # <[^<]+?>
-    return BeautifulSoup(text).get_text()
+    return BeautifulSoup(text, features='lxml').get_text(separator=' ')
+
+def remove_enumerate(text: str):
+    return re.sub('\d\.[^0-9]', ' ', text)
 
 def maintain_alpha(text: str):
-    return re.sub('[^a-zA-Z]', ' ', text)
+    return re.sub('[^a-zA-Z0-9]', ' ', text)
 
 def remove_single(text: str):
-    return re.sub('((?<=^)|(?<= )).((?=$)|(?= ))', ' ', text)
+    return re.sub('((?<=^)|(?<= ))[a-zA-Z]((?=$)|(?= ))', ' ', text)
 
 def remove_morespace(text: str):
     return re.sub('\s+', ' ', text)
@@ -49,12 +52,20 @@ def clean_text(text: str):
     return remove_morespace(
         remove_single(
             maintain_alpha(
-                remove_html(
-                    text.lower()
+                remove_enumerate(
+                    remove_html(
+                        text.lower()
+                    )
                 )
             )
         )
     ).strip()
+
+def remove_insideparentheses(text: str):
+    return re.sub('\(.+\)', '', text)
+
+def remove_standalonesymbols(text: str):
+    return re.sub('/|(\s&)|\.|(\s-)', ' ', text)
 
 def repair_salary(salary):
     if 0 < salary <= 100:
@@ -90,5 +101,14 @@ def totext_iq(iqmin=80, iqmax=200):
     for q in range(iqmin, iqmax + 1):
         iq.append('IQ' + str(q))
     return ' '.join(iq)
+
+def stopwords_remover(stopwords, text: str):
+    words = text.split(' ')
+    for word in words:
+        if word in stopwords:
+            words.remove(word)
+
+    return ' '.join(words)
+
     
 
