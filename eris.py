@@ -37,5 +37,5 @@ class ErisRecommender:
         # rec_idx = dist.argsort()[0, 1:top + 1]
         # return self.df.loc[rec_idx]
         
-        # return self.df[(self.df.Similarity > 20) & (self.df.Similarity < 100)]
-        return self.df.sort_values(by='Similarity', ascending=False)
+        return self.df[(self.df.Similarity > 75) & (self.df.Similarity < 100)]
+        # return self.df.sort_values(by='Similarity', ascending=False)
