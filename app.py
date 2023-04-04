@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-import pandas as pd
 
 
 
@@ -13,7 +12,11 @@ def predict():
     return jsonify(
         {'recommendation': 'Hi ' + name}
     )
+
+@app.route('/test/', methods=['GET'])
+def test():
+    return 'Hai'
     
 
 if __name__ == '__main__':
-    app.run(host='192.168.168.18', port=5000)
+    app.run(host='0.0.0.0', port=5000)
