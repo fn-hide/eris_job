@@ -1,46 +1,47 @@
 import pandas as pd
 
-from googletrans import Translator
-
 from connection import Connection
 from transform import *
 
 
 
-class Applicant:
-    def __init__(self, engine, applicant_id):
+class Applicants:
+    def __init__(self, engine):
         self.applicant_columns = ['ApplicantID', 'Age', 'Strengthness', 'Weaknesses', 'CityName', 'ProvinceName']
         self.applicant_education_columns = ['Industry', 'JobDescription', 'Position', 'YearsOfExperience']
         self.applicant_education_columns = ['EducationLevelName', 'MajorName']
 
         # Applicant
         self.df_applicant = pd.DataFrame(engine.execute(
-            f"""
+            """
             SELECT Applicant.ApplicantID, Applicant.Dob, Applicant.Strengthness, Applicant.Weaknesses, City.Name AS CityName, Province.Name AS ProvinceName
-            FROM ((Applicant
+            FROM (((Applicant
+            LEFT JOIN Pipeline ON Applicant.ApplicantID = Pipeline.ApplicantID)
             RIGHT JOIN City ON Applicant.CurrentAddressCityID = City.CityID)
             RIGHT JOIN Province ON Applicant.CurrentAddressProvinceID = Province.ProvinceID)
-            WHERE ApplicantID={applicant_id}
+            WHERE StageID=9
             """
         ))
 
         # Applicant Education
         self.df_applicant_education = pd.DataFrame(engine.execute(
-            f"""
+            """
             SELECT ApplicantEducation.ApplicantID, ApplicantEducation.DateStart, ApplicantEducation.DateEnd, EducationLevel.EducationLevelName, Major.MajorName
-            FROM ((ApplicantEducation
+            FROM (((ApplicantEducation
+            LEFT JOIN Pipeline ON ApplicantEducation.ApplicantID = Pipeline.ApplicantID)
             RIGHT JOIN EducationLevel ON ApplicantEducation.EducationLevelID = EducationLevel.EducationLevelID)
             RIGHT JOIN Major ON ApplicantEducation.MajorID = Major.MajorID)
-            WHERE ApplicantID={applicant_id}
+            WHERE StageID=9
             """
         ))
 
         # Applicant Experience
         self.df_applicant_experience = pd.DataFrame(engine.execute(
-            f"""
+            """
             SELECT ApplicantExperience.ApplicantID, ApplicantExperience.DateFrom, ApplicantExperience.DateTo, ApplicantExperience.Industry, ApplicantExperience.JobDescription, ApplicantExperience.Position
             FROM ApplicantExperience
-            WHERE ApplicantID={applicant_id}
+            LEFT JOIN Pipeline ON ApplicantExperience.ApplicantID = Pipeline.ApplicantID
+            WHERE StageID=9
             """
         ))
 
@@ -75,11 +76,6 @@ class Applicant:
         self.df_applicant.YearsOfExperience = self.df_applicant.YearsOfExperience.apply(lambda x: 'pengalaman ' + str(x) + ' tahun' if int(x) != 0 else '')
         self.df_applicant.EducationLevelName = self.df_applicant.EducationLevelName.apply(lambda x: 'lulusan ' + x.lower())
         
-        # translate
-        translator = Translator(service_urls=['translate.googleapis.com'])
-        for col in self.df_applicant.columns:
-            self.df_applicant[col] = self.df_applicant[col].apply(lambda x: translator.translate(x, dest='id').text)
-
     def preprocess_applicant(self):
         self.df_applicant['Age'] = pd.to_datetime(
             self.df_applicant.Dob.map(pick_date).apply(lambda x: filter_date(x, 1958, 2006))
@@ -140,16 +136,27 @@ class Applicant:
 
 
 
-
-
 if __name__ == '__main__':
     database = Connection('huda', 'Vancha12', '127.0.0.1', 1433, 'HRSystemDB')
     database.connect()
 
-    applicant = Applicant(database.engine, 33513)
+    # print(database.engine.table_names())
+
+    applicant = Applicants(database.engine)
+    
+    # print(applicant.df_applicant.shape)
+    # print(applicant.df_applicant_education.shape)
+    # print(applicant.df_applicant_experience.shape)
+    # print(applicant.df_applicant_education.columns)
+    # print(applicant.df_applicant_education.info())
+    # print(applicant.df_applicant_education.head())
+
+    # print(applicant.df_applicant_experience)
+    # print(applicant.df_applicant_experience.columns)
 
     print(applicant.df_applicant)
     print(applicant.df_applicant.columns)
+    # print(applicant.df_applicant.isna().sum())
 
 
 

@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 
 from connection import Connection
-from job import Job
+from jobs import Job
 from applicant import Applicant
 from recommender import Recommender
 
@@ -18,8 +18,8 @@ def predict():
     database.connect()
 
     job = Job(database.engine)
-    applicant = Applicant(database.engine)
-    recommender = Recommender(job, applicant)
+    applicant = Applicant(database.engine, applicant_id)
+    recommender = Recommender(job, applicant, translate=True)
 
     job_id, similarity = recommender.predict(applicant_id)
 
@@ -35,3 +35,7 @@ def predict():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+    # TODO: mengeksport job_bank agar dapat diakses secara langsung ketika belum ada job baru
+    # TODO: membuat blueprint untuk mendapatkan job yang baru ditambahkan dan job yang baru dihapus kemudian menggabungkannya dengan job_bank
+    # TODO: membuat file untuk training ulang ketika ada job baru dan direct predict ketika belum ada job baru

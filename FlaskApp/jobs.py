@@ -25,11 +25,9 @@ class Job:
         # cleansing
         self.preprocess()
 
-        # use JobID as index
-        self.df_job.set_index(['JobID'], inplace=True)
-        
-
     def preprocess(self):
+        self.df_job.set_index(['JobID'], inplace=True)
+
         self.df_job.fillna('', inplace=True)
 
         self.df_job.Description = self.df_job.Description.map(clean_text)
@@ -40,7 +38,7 @@ class Job:
 
         for col in ['EducationLevelName', 'CityName', 'ProvinceName', 'MajorName']:
             self.df_job[col] = self.df_job[col].map(str.lower)
-
+        
 
 
 if __name__ == '__main__':
@@ -53,6 +51,7 @@ if __name__ == '__main__':
     
     print(job.df_job)
     print(job.df_job.columns)
+
     
     
 
