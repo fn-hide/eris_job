@@ -1,3 +1,5 @@
+import pickle, os
+
 from flask import Flask, jsonify, request
 
 from connection import Connection
@@ -14,16 +16,25 @@ def predict():
     req_json = request.json
     applicant_id = req_json['ApplicantID']
 
+    re_train = True
+
     database = Connection('huda', 'Vancha12', '127.0.0.1', 1433, 'HRSystemDB')
     database.connect()
 
-    job = Job(database.engine)
-    applicant = Applicant(database.engine, applicant_id)
-    recommender = Recommender(job, applicant, translate=True)
+    if re_train:
+        job = Job(database.engine)
+        applicant = Applicant(database.engine, applicant_id)
+
+        recommender = Recommender(job, applicant)
+        recommender.fit(translate=False)
+
+        pickle.dump(recommender, open('data/model.pkl', 'wb'))
+    else:
+        applicant = Applicant(database.engine, applicant_id)
+        recommender = pickle.load(open('data/model.pkl', 'rb'))
+        recommender.fit(False)
 
     job_id, similarity = recommender.predict(applicant_id)
-
-    job_id, similarity = int(job_id), int(similarity)
 
     return jsonify(
         {
@@ -36,6 +47,10 @@ def predict():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
-    # TODO: mengeksport job_bank agar dapat diakses secara langsung ketika belum ada job baru
-    # TODO: membuat blueprint untuk mendapatkan job yang baru ditambahkan dan job yang baru dihapus kemudian menggabungkannya dengan job_bank
-    # TODO: membuat file untuk training ulang ketika ada job baru dan direct predict ketika belum ada job baru
+    # TODO: buat applicant selalu di translate
+
+    # TODO: improve translate
+    # TODO: cleansing stopwords
+
+
+

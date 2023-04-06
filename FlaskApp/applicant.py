@@ -5,10 +5,15 @@ from googletrans import Translator
 from connection import Connection
 from transform import *
 
+from googletrans import Translator
+
+from re import sub
+
 
 
 class Applicant:
     def __init__(self, engine, applicant_id):
+        # columns view
         self.applicant_columns = ['ApplicantID', 'Age', 'Strengthness', 'Weaknesses', 'CityName', 'ProvinceName']
         self.applicant_education_columns = ['Industry', 'JobDescription', 'Position', 'YearsOfExperience']
         self.applicant_education_columns = ['EducationLevelName', 'MajorName']
@@ -51,6 +56,10 @@ class Applicant:
         self.df_applicant_education.fillna('', inplace=True)
         self.df_applicant_experience.fillna('', inplace=True)
 
+        self.preprocess()
+        
+    
+    def preprocess(self):
         # preprocess each dataframe
         self.preprocess_applicant()
         self.preprocess_education()
@@ -59,11 +68,12 @@ class Applicant:
         # merge all applicant dataframe
         self.merge_applicant_df()
 
-        # cleansing
-        self.preprocess()
-        
+        # preprocessing
+        self.cleansing()
+        self.create_traindata()
+        self.remove_stopwords()
 
-    def preprocess(self):
+    def cleansing(self):
         self.df_applicant.set_index(['ApplicantID'], inplace=True)
 
         self.df_applicant[self.df_applicant.select_dtypes(object).columns] = self.df_applicant[self.df_applicant.select_dtypes(object).columns].applymap(str.lower)
@@ -74,11 +84,6 @@ class Applicant:
         self.df_applicant.Age = self.df_applicant.Age.apply(lambda x: 'usia ' + str(x) + ' tahun' if int(x) != 0 else '')
         self.df_applicant.YearsOfExperience = self.df_applicant.YearsOfExperience.apply(lambda x: 'pengalaman ' + str(x) + ' tahun' if int(x) != 0 else '')
         self.df_applicant.EducationLevelName = self.df_applicant.EducationLevelName.apply(lambda x: 'lulusan ' + x.lower())
-        
-        # translate
-        translator = Translator(service_urls=['translate.googleapis.com'])
-        for col in self.df_applicant.columns:
-            self.df_applicant[col] = self.df_applicant[col].apply(lambda x: translator.translate(x, dest='id').text)
 
     def preprocess_applicant(self):
         self.df_applicant['Age'] = pd.to_datetime(
@@ -137,6 +142,29 @@ class Applicant:
         # remove weaknesses because of negative word will also positive in word
         # TODO: improve in the future version
         self.df_applicant = self.df_applicant.drop(columns=['Weaknesses'])
+
+    def translate_id(self):
+        translator = Translator(service_urls=['translate.googleapis.com'])
+
+        print('Translating applicant ...')
+
+        for col in self.df_applicant.columns:
+            self.df_applicant[col] = self.df_applicant[col].apply(lambda x: translator.translate(x, dest='id').text.lower())
+
+    def create_traindata(self):
+        self.applicant_train = pd.DataFrame([], index=self.df_applicant.index)
+
+        new_series = []
+        for row in self.df_applicant.values:
+            new_series.append(' '.join(row))
+
+        self.applicant_train['Text'] = new_series
+
+    def remove_stopwords(self):
+        self.stopwords = [i[0] for i in pd.read_csv('data/stopwords.csv', header=None, names=['words'], na_filter=False).values]
+        
+        self.applicant_train.Text = self.applicant_train.Text.apply(lambda x: sub('\s+', '   ', '   ' + x + '   ')).apply(lambda x: sub('(' + ' | '.join(self.stopwords) + ')', ' ', x)).map(remove_morespace).map(str.strip)
+
 
 
 
