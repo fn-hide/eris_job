@@ -23,27 +23,23 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 class Recommender:
-    def __init__(self, job, applicant):
+    def __init__(self, job, applicant, translate=False):
         self.job = job
         self.applicant = applicant
+        self.translate = translate
 
         self.job_train = self.job.job_train
-        self.applicant_train = self.applicant.applicant_train
 
-    def translate_by_words(self):
-        # self.job.df_job[col] = self.job.df_job[col].apply(lambda x: ' '.join([translator.translate(i, dest='id').text for i in x.split(' ')])).map(str.lower)
-        pass
-
-    def fit(self, translate):
-        if translate:
+    def fit(self):
+        if self.translate:
             self.job.translate_id()
-        self.applicant.translate_id()
 
         self.tfidf_encoder = TfidfVectorizer()
+        self.tfidf_encoder = CountVectorizer()
         self.job_bank = self.tfidf_encoder.fit_transform(self.job_train.Text)
     
-    def predict(self, applicant_id):
-        text = self.applicant_train.loc[applicant_id].values[0]
+    def predict(self, applicant):
+        text = applicant.applicant_train.loc[applicant.applicant_id].values[0]
         code = self.tfidf_encoder.transform([text])
 
         dist = cosine_similarity(code, self.job_bank)[0]
@@ -54,6 +50,12 @@ class Recommender:
 
         return int(self.job.df_job[self.job.df_job.Similarity == similarity].index[0]), round(similarity, 2)
     
+
+
+    '''optional'''
+    def translate_by_words(self):
+        # self.job.df_job[col] = self.job.df_job[col].apply(lambda x: ' '.join([translator.translate(i, dest='id').text for i in x.split(' ')])).map(str.lower)
+        pass
     '''optional'''
     def download_stopwords(self):
         # download nltk stopwords
@@ -71,44 +73,29 @@ class Recommender:
 
 
 if __name__ == '__main__':
-    import time
-    start_time = time.time()
+    import pickle
 
+
+    # connect to database
     database = Connection('huda', 'Vancha12', '127.0.0.1', 1433, 'HRSystemDB')
     database.connect()
 
-    print('Connection time(s):', (time.time() - start_time))
-    start_time = time.time()
+    re_train = False
+    applicant_id = 31379
 
-    job = Job(database.engine)
+    if re_train:
+        job = Job(database.engine)
+        applicant = Applicant(database.engine, applicant_id)
 
-    print('Job time(s):', (time.time() - start_time))
-    start_time = time.time()
-
-    applicant = Applicant(database.engine, 33513)
-
-    print('Applicant time(s):', (time.time() - start_time))
-    start_time = time.time()
-
-    # print(job.df_job)
-    # print(job.df_job.columns)
-
-    # print(applicant.df_applicant)
-    # print(applicant.df_applicant.columns)
-
-    recommender = Recommender(job, applicant, translate=True)
-
-    # print(recommender.job_train)
-    # print(recommender.applicant_train)
-
-    # print(recommender.job_bank.todense())
+        recommender = Recommender(job, applicant, translate=True)
+        recommender.fit()
+    else:
+        applicant = Applicant(database.engine, applicant_id)
+        recommender = pickle.load(open('data/model.pkl', 'rb'))
 
     # [33513, 31861, 31891, 31790, 31797, 31698, 31700, 31604, 31379, 29821, 35778, 35187, 33631, 38226, 27292, 29243, 39827, 31567, 30254, 31968]
-    # print(applicant.df_applicant.index)
-
-    print(recommender.predict(33513))
-
-    print('Running time(s):', (time.time() - start_time))
+    
+    print(recommender.predict(applicant))
 
 
 

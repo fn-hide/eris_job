@@ -12,11 +12,13 @@ from re import sub
 
 
 class Applicant:
+    # columns view
+    applicant_columns = ['ApplicantID', 'Age', 'Strengthness', 'Weaknesses', 'CityName', 'ProvinceName']
+    applicant_education_columns = ['Industry', 'JobDescription', 'Position', 'YearsOfExperience']
+    applicant_education_columns = ['EducationLevelName', 'MajorName']
+
     def __init__(self, engine, applicant_id):
-        # columns view
-        self.applicant_columns = ['ApplicantID', 'Age', 'Strengthness', 'Weaknesses', 'CityName', 'ProvinceName']
-        self.applicant_education_columns = ['Industry', 'JobDescription', 'Position', 'YearsOfExperience']
-        self.applicant_education_columns = ['EducationLevelName', 'MajorName']
+        self.applicant_id = applicant_id
 
         # Applicant
         self.df_applicant = pd.DataFrame(engine.execute(
@@ -49,13 +51,13 @@ class Applicant:
             """
         ))
 
+        # mini-preprocessing
         self.df_applicant = self.df_applicant.drop_duplicates()
-
-        # fillna
         self.df_applicant.fillna('', inplace=True)
         self.df_applicant_education.fillna('', inplace=True)
         self.df_applicant_experience.fillna('', inplace=True)
 
+        # bulk-preprocessing
         self.preprocess()
         
     
@@ -72,6 +74,7 @@ class Applicant:
         self.cleansing()
         self.create_traindata()
         self.remove_stopwords()
+        self.translate_id()
 
     def cleansing(self):
         self.df_applicant.set_index(['ApplicantID'], inplace=True)
@@ -164,9 +167,6 @@ class Applicant:
         self.stopwords = [i[0] for i in pd.read_csv('data/stopwords.csv', header=None, names=['words'], na_filter=False).values]
         
         self.applicant_train.Text = self.applicant_train.Text.apply(lambda x: sub('\s+', '   ', '   ' + x + '   ')).apply(lambda x: sub('(' + ' | '.join(self.stopwords) + ')', ' ', x)).map(remove_morespace).map(str.strip)
-
-
-
 
 
 
