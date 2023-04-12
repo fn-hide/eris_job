@@ -46,6 +46,9 @@ def clean_text(text: str):
         )
     ).strip()
 
+def maintain_alphabet(text: str):
+    return sub('[^a-zA-Z]', ' ', text)
+
 
 
 
