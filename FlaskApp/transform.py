@@ -85,3 +85,11 @@ def substract_months(datestart, dateend):
 def get_age(date):
     return (datetime.now() - date) // timedelta64(1, 'Y')
 
+
+'''additional functions'''
+def remove_rows_by_values(df, col, values):
+    return df[~df[col].isin(values)]
+
+def filter_rows_by_values(df, col, values):
+    return df[df[col].isin(values)]
+
