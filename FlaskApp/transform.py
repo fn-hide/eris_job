@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from numpy import nan, timedelta64
 from datetime import datetime
 
+from googletrans import Translator
 
 
 def remove_html(text: str):
@@ -95,4 +96,47 @@ def remove_rows_by_values(df, col, values):
 
 def filter_rows_by_values(df, col, values):
     return df[df[col].isin(values)]
+
+'''from content_based_4.ipynb'''
+def change_slangwords(slangwords, teks):
+    if type(teks) == str:
+        teks = teks.split(' ')
+    for i in range(len(teks)):
+        if teks[i] in slangwords:
+            teks[i] = slangwords[teks[i]]
+    return teks
+
+def translate_teks(translator: Translator, teks):
+    if teks == '':
+        return ''
+    result = translator.translate(teks, dest='id', src='en').text
+    if result != teks:
+        print(f'Translating {teks[:25]} ...')
+    return result.lower()
+
+def stemmer_words(stemmer, teks):
+    if teks == '':
+        return ''
+    return stemmer.stem(teks)
+
+
+
+def function_replacement(text):
+    dict_function = {
+        'r&d': 'research development',
+        'asst.': 'assistant',
+        'hrd': 'human resources development',
+        'spv.': 'supervisor',
+        'and': '',
+        '&': '',
+        '-': '',
+    }
+    
+    list_text = text.split(' ')
+
+    for i in range(len(list_text)):
+        if list_text[i] in dict_function:
+            list_text[i] = dict_function[list_text[i]]
+    
+    return ' '.join(list_text)
 
