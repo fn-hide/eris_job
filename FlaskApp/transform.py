@@ -81,10 +81,10 @@ def substract_months(datestart, dateend):
 
     for i in range(len(result)):
         if result[i] > 1:
-            result[i] = int(result[i]/12)
+            result[i] = result[i]/12
         else:
             result[i] = 0
-    return result.astype(int)
+    return result.astype(float)
 
 def get_age(date):
     return (datetime.now() - date) // timedelta64(1, 'Y')
@@ -99,12 +99,22 @@ def filter_rows_by_values(df, col, values):
 
 '''from content_based_4.ipynb'''
 def change_slangwords(slangwords, teks):
+    """mengubah slangwords menjadi goodwords
+
+    Args:
+        slangwords (dict): dictionary of slangwords
+        teks (text): text to be changed
+
+    Returns:
+        str: text clean from slangwords
+    """
     if type(teks) == str:
         teks = teks.split(' ')
+
     for i in range(len(teks)):
         if teks[i] in slangwords:
             teks[i] = slangwords[teks[i]]
-    return teks
+    return ' '.join(teks)
 
 def translate_teks(translator: Translator, teks):
     if teks == '':
