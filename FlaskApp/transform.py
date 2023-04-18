@@ -37,7 +37,7 @@ def remove_parenthesesnumber(text: str):
 def clean_text(text: str):
     return remove_morespace(
         remove_single(
-            maintain_alphanum(
+            maintain_alphabet(
                 remove_enumerate(
                     remove_html(
                         text.lower()
@@ -98,7 +98,7 @@ def filter_rows_by_values(df, col, values):
     return df[df[col].isin(values)]
 
 '''from content_based_4.ipynb'''
-def change_slangwords(slangwords, teks):
+def change_words(slangwords, teks):
     """mengubah slangwords menjadi goodwords
 
     Args:

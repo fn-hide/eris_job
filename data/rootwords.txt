@@ -9047,6 +9047,7 @@ genom
 genosida
 genotipe
 genre
+genset
 genta
 gentala
 gentar
