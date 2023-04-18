@@ -1,6 +1,9 @@
 genset
 daring
 luring
+persero
+promisi
+tren
 0
 a
 a-beta
@@ -31677,3 +31680,494 @@ zulu
 zum
 zuriah
 zusanli
+aceh barat
+aceh barat daya
+aceh besar
+aceh jaya
+aceh selatan
+aceh singkil
+aceh tamiang
+aceh tengah
+aceh tenggara
+aceh timur
+aceh utara
+agam
+alor
+ambon
+anu2
+asahan
+asmat
+badung
+balangan
+balikpapan
+banda aceh
+bandar lampung
+bandung
+bandung barat
+banggai
+banggai kepulauan
+banggai laut
+bangka
+bangka barat
+bangka selatan
+bangka tengah
+bangkalan
+bangli
+banjar
+banjar kalsel
+banjarbaru
+banjarmasin
+banjarnegara
+bantaeng
+bantul
+banyuasin
+banyumas
+banyuwangi
+barito kuala
+barito selatan
+barito timur
+barito utara
+barru
+batam
+batang
+batang hari
+batu
+batu bara
+bau-bau
+bekasi
+belitung
+belitung timur
+belu
+bener meriah
+bengkalis
+bengkayang
+bengkulu
+bengkulu selatan
+bengkulu tengah
+bengkulu utara
+berau
+biak numfor
+bima
+binjai
+bintan
+bireuen
+bitung
+blitar
+blora
+boalemo
+bogor
+bojonegoro
+bolaang mongondow
+bolaang mongondow selatan
+bolaang mongondow timur
+bolaang mongondow utara
+bombana
+bondowoso
+bone
+bone bolango
+bontang
+boven digoel
+boyolali
+brebes
+bukittinggi
+buleleng
+bulukumba
+bulungan
+bungo
+buol
+buru
+buru selatan
+buton
+buton selatan
+buton tengah
+buton utara
+ciamis
+cianjur
+cilacap
+cilegon
+cimahi
+cirebon
+dairi
+deiyai
+deli serdang
+demak
+denpasar
+denpasar 2
+depok
+dharmasraya
+dogiyai
+dompu
+donggala
+dumai
+empat lawang
+ende
+enrekang
+fakfak
+flores timur
+garut
+gayo lues
+gianyar
+gorontalo
+gorontalo utara
+gowa
+gresik
+grobogan
+gunung kidul
+gunung mas
+gunungsitoli
+halmahera barat
+halmahera selatan
+halmahera tengah
+halmahera timur
+halmahera utara
+hulu sungai selatan
+hulu sungai tengah
+hulu sungai utara
+humbang hasundutan
+indragiri hilir
+indragiri hulu
+indramayu
+intan jaya
+jakarta
+jakarta barat
+jakarta pusat
+jakarta selatan
+jakarta timur
+jakarta utara
+jambi
+jayapura
+jayawijaya
+jember
+jembrana
+jeneponto
+jepara
+jombang
+kaimana
+kampar
+kapuas
+kapuas hulu
+karanganyar
+karangasem
+karawang
+karimun
+karo
+katingan
+kaur
+kayong utara
+kebumen
+kediri
+keerom
+kendal
+kendari
+kepahiang
+kepulauan anambas
+kepulauan aru
+kepulauan mentawai
+kepulauan meranti
+kepulauan sangihe
+kepulauan selayar
+kepulauan seribu
+kepulauan siau tagulandang biaro (sitaro)
+kepulauan sula
+kepulauan talaud
+kepulauan yapen
+kerinci
+ketapang
+klaten
+klungkung
+kolaka
+kolaka timur
+kolaka utara
+konawe
+konawe kepulauan
+konawe selatan
+konawe utara
+kotabaru
+kotamobagu
+kotawaringin barat
+kotawaringin timur
+kuantan singingi
+kubu raya
+kudus
+kulon progo
+kuningan
+kupang
+kutai barat
+kutai kartanegara
+kutai timur
+labuhanbatu
+labuhanbatu selatan
+labuhanbatu utara
+lahat
+lamandau
+lamongan
+lampung barat
+lampung selatan
+lampung tengah
+lampung timur
+lampung utara
+landak
+langkat
+lanny jaya
+lebak
+lebong
+lembata
+lhokseumawe
+lima puluh kota
+lingga
+lombok barat
+lombok tengah
+lombok timur
+lombok utara
+lubuk linggau
+lumajang
+luwu
+luwu timur
+luwu utara
+madiun
+magelang
+magetan
+mahakam ulu
+majalengka
+majene
+makassar
+malaka
+malang
+malinau
+maluku barat daya
+maluku tengah
+maluku tenggara
+maluku tenggara barat
+mamasa
+mamberamo raya
+mamberamo tengah
+mamuju
+mamuju tengah
+mamuju utara
+manado
+mandailing natal
+manggarai
+manggarai barat
+manggarai timur
+manokwari
+manokwari selatan
+mappi
+maros
+mataram
+maybrat
+medan
+melawi
+mempawah
+merangin
+merauke
+mesuji
+metro
+mimika
+minahasa
+minahasa selatan
+minahasa tenggara
+minahasa utara
+mojokerto
+morowali
+morowali utara
+muara enim
+muaro jambi
+muko muko
+muna
+muna barat
+murung raya
+musi banyuasin
+musi rawas
+musi rawas utara
+nabire
+nagan raya
+nagekeo
+natuna
+nduga
+ngada
+nganjuk
+ngawi
+nias
+nias barat
+nias selatan
+nias utara
+nunukan
+ogan ilir
+ogan komering ilir
+ogan komering ulu
+ogan komering ulu selatan
+ogan komering ulu timur
+pacitan
+padang
+padang lawas
+padang lawas utara
+padang panjang
+padang pariaman
+padang sidempuan
+pagar alam
+pakpak bharat
+palangka raya
+palembang
+palopo
+palu
+pamekasan
+pandeglang
+pangandaran
+pangkajene kepulauan
+pangkal pinang
+paniai
+parepare
+pariaman
+parigi moutong
+pasaman
+pasaman barat
+paser
+pasuruan
+pati
+payakumbuh
+pegunungan arfak
+pegunungan bintang
+pekalongan
+pekanbaru
+pelalawan
+pemalang
+pematang siantar
+penajam paser utara
+penukal abab lematang ilir
+pesawaran
+pesisir barat
+pesisir selatan
+pidie
+pidie jaya
+pinrang
+pohuwato
+polewali mandar
+ponorogo
+pontianak
+poso
+prabumulih
+pringsewu
+probolinggo
+pulang pisau
+pulau morotai
+pulau taliabu
+puncak
+puncak jaya
+purbalingga
+purwakarta
+purworejo
+raja ampat
+rejang lebong
+rembang
+rokan hilir
+rokan hulu
+rote ndao
+sabang
+sabu raijua
+salatiga
+samarinda
+sambas
+samosir
+sampang
+sanggau
+sarmi
+sarolangun
+sawah lunto
+sekadau
+seluma
+semarang
+seram bagian barat
+seram bagian timur
+serang
+serdang bedagai
+seruyan
+siak
+sibolga
+sidenreng rappang
+sidoarjo
+sigi
+sijunjung
+sikka
+simalungun
+simeulue
+singkawang
+sinjai
+sintang
+situbondo
+sleman
+solok
+solok selatan
+soppeng
+sorong
+sorong selatan
+sragen
+subang
+subulussalam
+sukabumi
+sukamara
+sukoharjo
+sumba barat
+sumba barat daya
+sumba tengah
+sumba timur
+sumbawa
+sumbawa barat
+sumedang
+sumenep
+sungaipenuh
+supiori
+surabaya
+surakarta
+tabalong
+tabanan
+takalar
+tambrauw
+tana tidung
+tana toraja
+tanah bumbu
+tanah datar
+tanah laut
+tangerang
+tangerang selatan
+tanggamus
+tanjung balai
+tanjung jabung barat
+tanjung jabung timur
+tanjung pinang
+tapanuli selatan
+tapanuli tengah
+tapanuli utara
+tapin
+tarakan
+tasikmalaya
+tebing tinggi
+tebo
+tegal
+teluk bintuni
+teluk wondama
+temanggung
+ternate
+tidore kepulauan
+timor tengah selatan
+timor tengah utara
+toba samosir
+tojo una-una
+tolikara
+toli-toli
+tomohon
+toraja utara
+trenggalek
+tual
+tuban
+tulang bawang
+tulang bawang barat
+tulungagung
+wajo
+wakatobi
+waropen
+way kanan
+wonogiri
+wonosobo
+yahukimo
+yalimo
+yogyakarta
