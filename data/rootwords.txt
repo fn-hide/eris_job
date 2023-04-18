@@ -1,3 +1,6 @@
+genset
+daring
+luring
 0
 a
 a-beta
@@ -9047,7 +9050,6 @@ genom
 genosida
 genotipe
 genre
-genset
 genta
 gentala
 gentar
