@@ -1,0 +1,191 @@
+DaftarJurusan
+administrasi bisnis
+administrasi pendidikan
+administrasi perkantoran
+administrasi publik
+agribisnis
+agrobisnis perikanan
+agroeteknologi
+agronomi dan hortikultura
+aktuaria
+akuntansi keuangan
+akuntansi perpajakan
+animasi
+antropologi
+arsitektur
+astronomi
+audio engineering
+audit system informasi
+automotive and robotics engineering
+biokimia
+biologi
+bioteknologi
+budidaya perairan (akuakultur)
+budidaya perikanan
+desain grafis
+desain interior
+desain komunikasi visual
+desain produk
+ekonomi industri
+ekonomi internasional
+ekonomi islam
+ekonomi moneter
+ekonomi pembangunan
+ekonomi publik
+farmasi
+filsafat
+fisika
+fisika medis
+fisioterapi
+geofisika
+geografi
+hubungan internasional
+hubungan masyarakat
+ilmu gizi
+ilmu hama dan penyakit tumbuhan
+ilmu hukum
+ilmu kelautan
+ilmu keperawatan
+ilmu kesejahteraan sosial
+ilmu komputasi
+ilmu komputer
+ilmu komunikasi
+ilmu olahraga
+ilmu pangan
+ilmu pemerintahan
+ilmu politik
+ilmu sejarah
+jurnalistik
+kearsipan
+kebidanan
+kedokteran
+kedokteran gigi
+kedokteran hewan
+kehutanan
+kesehatan lingkungan
+kesehatan masyarakat
+keselamatan dan kesehatan kerja
+kimia
+komunikasi penerbangan
+konservasi sumberdaya hutan dan ekowisata
+kriminologi
+kurikulum dan teknologi pendidikan
+manajemen keuangan
+manajemen komunikasi
+manajemen pelayanan rumah sakit
+manajemen pemasaran
+manajemen pendidikan
+manajemen pendidikan islam
+manajemen sumber daya lahan
+manajemen sumber daya manusia
+matematika
+meteorologi
+metrologi
+mikrobiologi pertanian
+mikrobiologi
+oseanografi
+pariwisata
+pemberdayaan sda dan lingkungan
+pendidikan agama
+pendidikan akuntansi
+pendidikan anak usia dini
+pendidikan bahasa arab
+pendidikan bahasa dan sastra indonesia
+pendidikan bahasa inggris
+pendidikan bimbingan konseling
+pendidikan geografi
+pendidikan guru sekolah dasar (pgsd)
+pendidikan ilmu pengetahuan alam
+pendidikan intelijen
+pendidikan jasmani
+pendidikan luar biasa
+pendidikan matematika
+pendidikan militer
+pendidikan pancasila dan kewarganegaraan
+pendidikan pilot
+pendidikan polisi
+pendidikan sejarah
+pendidikan sosiologi
+pengelolaan hutan
+pengembangan masyarakat
+penyiaran
+penyuluhan dan komunikasi pertanian
+perhotelan
+periklanan
+perpustakaan
+peternakan
+politik islam
+produksi ternak
+psikologi
+radioterapi
+rekayasa hayati
+rekayasa industri
+rekayasa infrastruktur lingkungan
+rekayasa pertanian
+sastra belanda
+sastra cina
+sastra indonesia
+sastra inggris
+sastra jawa
+sastra jepang
+sastra korea
+sastra perancis
+sastra rusia
+sejarah dan kebudayaan islam
+sekretaris
+semua jurusan
+silvikultur
+sistem informasi
+sistem komputer
+sma bahasa
+sma ipa
+sma ips
+sma segala jurusan
+software engineering
+sosiologi
+statistika
+statistika terapan
+sumber daya perairan
+tafsir hadis
+tata boga
+tata busana
+teknik alat berat
+teknik bioenergi dan kemurgi
+teknik elektro
+teknik fisika
+teknik geodesi
+teknik geologi
+teknik geomatika
+teknik grafika
+teknik industri
+teknik informatika
+teknik kelautan
+teknik kimia
+teknik konversi energi
+teknik lingkungan
+teknik material
+teknik mesin
+teknik metalurgi
+teknik nuklir
+teknik otomasi manufaktur dan mekatronika
+teknik otomotif
+teknik pendingin dan tata udara
+teknik penerbangan (aeronautika dan astronautika)
+teknik pengairan (sumber daya air)
+teknik perancangan jalan dan jembatan
+teknik perencanaan wilayah dan kota (planologi)
+teknik perkapalan
+teknik perminyakan
+teknik perpipaan
+teknik pertambangan
+teknik pesawat udara
+teknik sipil
+teknik sistem komputer
+teknik sistem perkapalan
+teknik telekomunikasi
+teknik tenaga listrik
+teknobiomedik
+teknologi bioproses
+teknologi hasil hutan
+teknologi hasil perikanan
+teknologi hasil ternak

@@ -1,0 +1,245 @@
+DaftarKeahlian
+.net
+3d studio max
+3d video
+accounting
+accurate
+acls
+acting
+administrasi
+administrasi bpjs
+adobe skills
+advokat
+alat tes
+analisis data
+android development
+android studio
+animator
+artificial intelligence
+audit
+autocad
+autodesk
+baby sitter
+bahasa inggris
+bahasa jepang
+bahasa mandarin
+bakery
+barista
+bartender
+berpikir kritis
+blender
+brevet a/b
+btcls
+c#
+c++
+cad
+cde
+chinese food
+chiropractic
+cinematografi
+cisco
+cms
+cna
+codeigniter
+coffee roasting
+content creator
+content marketing
+content planning
+content strategy
+content writing
+cook helper
+cooking
+copywriting
+corel draw
+critical thinking
+crm
+crna
+css
+data analysis
+data entry
+data management
+data visualisation
+data warehouse
+database
+detail-oriented
+digital marketing
+drafting
+driver manual
+driver matic
+drone
+dubbing
+editor
+edp
+ekspor-impor
+electrical
+enpc
+eq
+erp
+estimator
+facebook ads
+fiber optik
+figma
+finance
+fokus
+forecasting
+fotografi
+gels
+general affair
+git
+gizi
+google ads
+graphic design
+grill
+ground crew
+guide
+hairdo
+hairstylist
+helpdesk
+housekeeping
+hris
+hse
+html
+hubspot
+icu
+ilustrator
+indesign
+instalasi
+interior
+interview
+ios development
+ipcn
+iso
+japanese food
+java
+java script
+k3
+kasir
+ketelitian
+ketenagakerjaan
+kolaborasi
+komunikasi
+konsultan keuangan
+kreativitas
+kreativitas
+landscape
+laravel
+laundry
+legal drafting
+legal opinion
+litigasi
+machine learning
+maintenance hardware
+maintenance software
+make up artist
+maket
+manajemen projek
+manufacture
+marketing
+matlab
+mechanical electric
+mekanik hidrolik
+mendengarkan secara aktif
+menjahit
+meta ads
+microsoft excel
+microsoft office
+microsoft word
+mikrotik
+montir
+motion graphic
+multitasking
+music
+mvc
+my sql
+myob
+nail art
+negosiasi
+networking/jaringan
+node js
+obs studio
+operator
+operator alat berat
+operator bulldozer
+operator conveyer
+operator excavator
+operator forklift
+operator mesin
+opertor alat berat
+origami
+otomasi
+pabx
+pals 
+paper cutting
+pastry
+payroll
+pcp/ip
+pengambilan keputusan
+pengecatan
+pengelasan
+penyelesaian masalah
+perencanaan & penjadwalan
+perencanaan budget
+perhitungan
+perundang-undangan
+photoshop
+pidato
+plc
+plumbing
+power bi
+ppgd
+ppic
+premiere
+presentasi
+problem-solving
+product knowledge
+programming
+psikolog
+psikotes
+public speaking
+qc
+r or phyton
+racik obat
+receptionist
+refleksiologi
+rekrutmen
+resep
+revit
+robotics
+sabar
+salesforce
+sap
+scientific reports
+scientific writing
+sektch up
+sem
+seo
+server
+service
+sitac
+sql
+sql
+srm
+stock opname
+strategic thinking
+supply chain management
+surat menyurat
+surveyor
+swift
+tattoo
+tax
+terapis
+time management
+training
+training and development
+troubleshooting
+tune-up
+ui/ux
+videografi
+voice-over
+vokalis
+vue js
+welder
+western food
+wiring diagram
+zahir
+zoho
