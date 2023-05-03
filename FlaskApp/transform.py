@@ -37,7 +37,7 @@ def remove_parenthesesnumber(text: str):
 def clean_text(text: str):
     return remove_morespace(
         remove_single(
-            maintain_alphabet(
+            maintain_alphanum(
                 remove_enumerate(
                     remove_html(
                         text.lower()
